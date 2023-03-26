@@ -22,7 +22,9 @@ const Feed = () => {
           >
            New <span style={{ color: '#F31503' }}>video</span>
           </Typography>
-          <Videos video={[(Paul.sunday && Pauldogo ) => {}]}/>
+          <Videos video={[(Paul.sunday && Pauldogo ) => {
+            sunday
+          }]}/>
         </Box>
     </Stack>
   )
