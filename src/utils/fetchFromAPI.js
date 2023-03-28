@@ -6,5 +6,6 @@ const options = {
   params: {
     relatedToVideoId: '7ghhRHRP6t4',
     part: 'id,snippet',
+    type: 'video',
    
 };
