@@ -7,5 +7,7 @@ const options = {
     relatedToVideoId: '7ghhRHRP6t4',
     part: 'id,snippet',
     type: 'video',
-   
+    maxResults: '50'
+  },
+
 };
