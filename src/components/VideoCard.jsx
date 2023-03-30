@@ -18,7 +18,8 @@ const VideoCard = ({ video: { id: { videoId }, snippet} }) => {
         />
         </Link>
         <CardContent sx={{ background: '#1e1e1e', height: '106px' }}>
-          f
+          <Link to={ videoId ? `/video/${videoId}` : demoVideoUrl } ></Link>
+          }
         </CardContent>
     </Card>
   )
