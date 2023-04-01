@@ -16,6 +16,8 @@ const VideoDetail = () => {
   .then((data) => setVideoDetail(data.items[0]));
   }, [id]);
 
+  if (!videoDetail?.snippet) return 'Loading...';
+
   const { snippet: { title, channelId, channelTitle }, statistics: { 
     viewCount, likeCount } } = videoDetail;
 
@@ -31,7 +33,20 @@ const VideoDetail = () => {
             </Typography>
             <Stack direction='row' justifyContent='space-between' sx={{
               color: '#fff' }} py={1} px={2}>
-                <Link to={`/channel/${channelId}`}></Link>
+                <Link to={`/channel/${channelId}`}>
+                  <Typography>
+                    {channelTitle}
+                    <CheckCircle sx={{ fontSize: '12px', color: 'gray', ml: '5px'}} />
+                  </Typography>
+                </Link>
+                <Stack direction='row' gap='20px' alignItems='center'>
+                  <Typography variant='body1' sx={{ opacity: 0.7}}>
+                    {parseInt(viewCount).toLocaleString()} views
+                  </Typography>
+                  <Typography variant='body1' sx={{ opacity: 0.7}}>
+                    {parseInt(likeCount).toLocaleString()} likes
+                  </Typography>
+                </Stack>
               </Stack>
           </Box>
         </Box>
