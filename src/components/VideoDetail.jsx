@@ -32,7 +32,7 @@ const VideoDetail = () => {
           <Box sx={{ width: '100%', position: 'sticky', top: '86px' }}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
              className='react-player' controls />
-            <Typography color='#fff' variant='h5'>
+            <Typography color='#fff' variant='h5' fontWeight='bold'>
               {title}
             </Typography>
             <Stack direction='row' justifyContent='space-between' sx={{
