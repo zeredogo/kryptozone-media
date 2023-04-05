@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Box sx={{ backgroundColor: '#000' }}>
-         <Navbar />
+         <Navbar /> 
          <Routes>
             <Route path='/' exact element={<Feed />} />
             <Route path='/video/:id' element={<VideoDetail />} />
@@ -18,4 +18,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
