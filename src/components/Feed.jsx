@@ -26,7 +26,7 @@ const Feed = () => {
           <Typography className='copyright' variant='body2' 
           sx={{ mt: 1.5, color: '#fff' }}
           >
-            Copyright 2023 Krypto zone  Media
+           Krypto Zone &copy; 2023 
           </Typography>
         </Box>
         <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2}}>
