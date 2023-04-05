@@ -43,4 +43,4 @@ const ChannelCard = ({ channelDetail, marginTop }) =>  (
   )
 
 
-export default ChannelCard
+export default ChannelCard;

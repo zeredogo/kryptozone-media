@@ -38,4 +38,4 @@ const ChannelDetail = () => {
   )
 }
 
-export default ChannelDetail
+export default ChannelDetail;
